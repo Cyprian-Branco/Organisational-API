@@ -15,3 +15,11 @@ deptName VARCHAR,
 description VARCHAR,
 noOfEmployees int
 );
+CREATE TABLE IF NOT EXISTS news (
+id SERIAL PRIMARY KEY,
+type VARCHAR,
+content VARCHAR,
+departmentid int;
+);
+CREATE DATABASE organisational_api_test WITH TEMPLATE organisational_api;
+
