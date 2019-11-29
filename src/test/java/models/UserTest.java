@@ -44,11 +44,16 @@ public class UserTest {
     }
 
     @Test
-    public void getId() {
+    public void getIdInstantiatesCorrectly() {
+        User testUser = setupUser();
+        assertEquals(0, testUser.getId());
     }
 
     @Test
-    public void setUsername() {
+    public void setUsernameInstantiatesCorrectly() {
+        User testUser = setupUser();
+        testUser.setUsername("mike");
+        assertEquals("mike", testUser.getUsername());
     }
 
     @Test
