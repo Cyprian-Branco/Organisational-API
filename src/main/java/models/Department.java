@@ -11,4 +11,20 @@ public class Department {
         this.description = description;
         this.NoOfEmployees = NoOfEmployees;
     }
+
+    public String getDeptName() {
+        return DeptName;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getNoOfEmployees() {
+        return NoOfEmployees;
+    }
+
+    public int getId() {
+        return id;
+    }
 }
