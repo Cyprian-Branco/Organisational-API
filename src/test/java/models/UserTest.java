@@ -79,6 +79,9 @@ public class UserTest {
     }
 
     @Test
-    public void setDepartmentId() {
+    public void setDepartmentIdInstantiatesCorrectly() {
+        User testUser = setupUser();
+        testUser.setDepartmentId(3);
+        assertEquals(3,testUser.getDepartmentId());
     }
 }
