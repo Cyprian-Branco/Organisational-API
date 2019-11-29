@@ -31,7 +31,12 @@ public class UserTest {
         assertEquals("manager", testUser.getCompany_position());
     }
 
-    
+    @Test
+    public void getRoleInstantiatesCorrectly() {
+        User testUser = setupUser();
+        assertEquals("supervise", testUser.getRole());
+    }
+
     @Test
     public void getUsernameInstantiatesCorrectly() {
     }
