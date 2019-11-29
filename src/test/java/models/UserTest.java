@@ -64,11 +64,18 @@ public class UserTest {
     }
 
     @Test
-    public void setRole() {
+    public void setRoleInstantiatesCorrectly() {
+        User testUser = setupUser();
+        testUser.setRole("supervise");
+        assertEquals("supervise", testUser.getId());
     }
 
     @Test
-    public void setId() {
+    public void setIdInstantiatesCorrectly() {
+        User testUser = setupUser();
+        testUser.setId(0);
+        assertEquals(0, testUser.getId());
+
     }
 
     @Test
