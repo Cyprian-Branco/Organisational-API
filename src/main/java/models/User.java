@@ -13,4 +13,24 @@ public class User {
         this.role =role;
         this.departmentId = departmentId;
     }
+
+    public int getDepartmentId() {
+        return departmentId;
+    }
+
+    public String getCompany_position() {
+        return company_position;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public int getId() {
+        return id;
+    }
 }
