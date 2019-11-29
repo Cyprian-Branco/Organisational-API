@@ -57,7 +57,10 @@ public class UserTest {
     }
 
     @Test
-    public void setCompany_position() {
+    public void setCompany_positionInstantiatesCorrectly() {
+        User testUser = setupUser();
+        testUser.setCompany_position("manager");
+        assertEquals("manager", testUser.getCompany_position());
     }
 
     @Test
