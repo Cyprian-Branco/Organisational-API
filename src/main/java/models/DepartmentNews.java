@@ -10,4 +10,20 @@ public class DepartmentNews  extends News{
         this.departmentId =departmentId;
         this.type = DATABASE_TYPE;
     }
+
+    public int getDepartmentId() {
+        return departmentId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setDepartmentId(int departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
