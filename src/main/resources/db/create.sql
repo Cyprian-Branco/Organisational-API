@@ -8,3 +8,10 @@ company_position VARCHAR,
 role VARCHAR,
 departmentid int
 );
+
+CREATE TABLE IF NOT EXISTS departments (
+id SERIAL PRIMARY KEY,
+deptName VARCHAR,
+description VARCHAR,
+noOfEmployees int
+);
