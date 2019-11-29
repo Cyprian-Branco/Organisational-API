@@ -39,6 +39,8 @@ public class UserTest {
 
     @Test
     public void getUsernameInstantiatesCorrectly() {
+        User testUser = setupUser();
+        assertEquals("mike", testUser.getUsername());
     }
 
     @Test
