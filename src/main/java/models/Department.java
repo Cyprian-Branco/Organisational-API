@@ -27,4 +27,20 @@ public class Department {
     public int getId() {
         return id;
     }
+
+    public void setDeptName(String deptName) {
+        DeptName = deptName;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setNoOfEmployees(int noOfEmployees) {
+        NoOfEmployees = noOfEmployees;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
