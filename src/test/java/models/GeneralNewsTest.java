@@ -34,10 +34,8 @@ public class GeneralNewsTest {
     }
 
     @Test
-    public void setId() {
-    }
-
-    @Test
-    public void name() {
+    public void getContentInstantiatesCorrectly(){
+        GeneralNews testGeneralNews = setupGeneralNews();
+        assertEquals("news", testGeneralNews.getContent());
     }
 }
