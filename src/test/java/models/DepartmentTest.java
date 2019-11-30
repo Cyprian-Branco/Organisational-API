@@ -24,25 +24,40 @@ public class DepartmentTest {
 
     @Test
     public void getNoOfEmployees() {
+        Department testDepartment = setupDepartment();
+        assertEquals(4, testDepartment.getNoOfEmployees());
     }
-
     @Test
     public void getId() {
+        Department testDepartment = setupDepartment();
+        assertEquals(0,testDepartment.getId());
     }
 
     @Test
     public void setDeptName() {
+        Department testDepartment = setupDepartment();
+        testDepartment.setDeptName("field");
+        assertEquals("field", testDepartment.getDeptName());
     }
 
     @Test
     public void setDescription() {
+        Department testDepartment = setupDepartment();
+        testDepartment.setDescription("collecting data");
+        assertEquals("collecting data", testDepartment.getDescription());
     }
 
     @Test
     public void setNoOfEmployees() {
+        Department testDepartment = setupDepartment();
+        testDepartment.setNoOfEmployees(4);
+        assertEquals(4,testDepartment.getNoOfEmployees());
     }
 
     @Test
     public void setId() {
+        Department testDepartment = setupDepartment();
+        testDepartment.setId(0);
+        assertEquals(0,testDepartment.getId());
     }
 }
