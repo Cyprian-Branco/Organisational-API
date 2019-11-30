@@ -6,12 +6,20 @@ import static org.junit.Assert.*;
 
 public class DepartmentTest {
 
+    public Department setupDepartment(){
+        return new Department("field", "collecting data", 4);
+    }
+
     @Test
     public void getDeptName() {
+        Department testDepartment = setupDepartment();
+        assertEquals("field", testDepartment.getDeptName());
     }
 
     @Test
     public void getDescription() {
+        Department testDepartment = setupDepartment();
+        assertEquals("collecting data", testDepartment.getDescription());
     }
 
     @Test
