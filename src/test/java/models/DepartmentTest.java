@@ -18,6 +18,8 @@ public class DepartmentTest {
 
     @Test
     public void getDescription() {
+        Department testDepartment = setupDepartment();
+        assertEquals("collecting data", testDepartment.getDescription());
     }
 
     @Test
