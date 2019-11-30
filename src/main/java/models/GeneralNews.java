@@ -16,4 +16,14 @@ public class GeneralNews extends News{
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String getContent() {
+        return super.getContent();
+    }
+
+    @Override
+    public void setContent(String content) {
+        super.setContent(content);
+    }
 }
