@@ -1,10 +1,10 @@
 package models;
 
 public abstract class News {
-    public String content;
+    public static String content;
     public String type;
 
-    public String getContent() {
+    public static String getContent() {
         return content;
     }
 
