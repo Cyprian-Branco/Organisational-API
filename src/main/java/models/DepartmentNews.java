@@ -26,4 +26,9 @@ public class DepartmentNews  extends News{
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public void setContent(String content) {
+        super.setContent(content);
+    }
 }
