@@ -36,7 +36,13 @@ public class Sql2oDepartmentDao implements DepartmentDao {
         }
     }
 
-    
+    @Override
+    public Department findById(int id) {
+        try (Connection con = sql2o.open()) {
+            return (Department) con.createQuery("SELECT * FROM departments WHERE id = :id").addParameter("id", id).executeAndFetch(Department.class);
+
+        }
+    }
 
     @Override
     public void update(String deptName, String description, int noOfEmployees) {
