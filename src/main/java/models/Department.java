@@ -1,19 +1,19 @@
 package models;
 
 public class Department {
-    private String DeptName;
+    private String deptName;
     private String description;
-    private int NoOfEmployees;
+    private int noOfEmployees;
     private int id;
 
     public Department(String deptName, String description, int NoOfEmployees){
-        this.DeptName = deptName;
+        this.deptName = deptName;
         this.description = description;
-        this.NoOfEmployees = NoOfEmployees;
+        this.noOfEmployees = NoOfEmployees;
     }
 
     public String getDeptName() {
-        return DeptName;
+        return deptName;
     }
 
     public String getDescription() {
@@ -21,7 +21,7 @@ public class Department {
     }
 
     public int getNoOfEmployees() {
-        return NoOfEmployees;
+        return noOfEmployees;
     }
 
     public int getId() {
@@ -29,7 +29,7 @@ public class Department {
     }
 
     public void setDeptName(String deptName) {
-        DeptName = deptName;
+        deptName = deptName;
     }
 
     public void setDescription(String description) {
@@ -37,7 +37,7 @@ public class Department {
     }
 
     public void setNoOfEmployees(int noOfEmployees) {
-        NoOfEmployees = noOfEmployees;
+        noOfEmployees = noOfEmployees;
     }
 
     public void setId(int id) {
