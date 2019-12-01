@@ -11,4 +11,7 @@ public interface GeneralNewsDao {
     List<Department> getAll();
     Department findById(int id);
 
+    void update (String deptName, String description, int noOfEmployees);
+
+    void deleteById (int Id);
 }
