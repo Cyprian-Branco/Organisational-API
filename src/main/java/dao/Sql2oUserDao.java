@@ -8,7 +8,7 @@ import org.sql2o.Sql2oException;
 
 import java.util.List;
 
-public class Sql2oUserDao {
+public class Sql2oUserDao implements UserDao {
     private final Sql2o sql2o;
 
     public Sql2oUserDao(Sql2o sql2o){
@@ -16,7 +16,7 @@ public class Sql2oUserDao {
     }
     @Override
         public void add(User user) {
-        String sql = "INSERT INTO users (username, company_position, role, departmentid) VALUES (:username, :company_position, :departmentId)":
+        String sql = "INSERT INTO users (username, company_position, role, departmentid) VALUES (:username, :company_position, :departmentId)";
         try (Connection con = sql2o.open()) {
             int id = (int) con.createQuery(sql, true)
                     .bind(user)
@@ -34,7 +34,7 @@ public class Sql2oUserDao {
         }
     }
     @Override
-    public List<User> getAllUsersByDepartment( int departmentId) {
+    public List<User> getAllUsersByDepartment(int departmentId) {
         String sql = "SELECT * FROM users WHERE departmentid = :departmentId";
         try (Connection con = sql2o.open()) {
             return con.createQuery(sql).addParameter("departmentId", departmentId).executeAndFetch(User.class);
