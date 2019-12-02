@@ -1,17 +1,15 @@
 package dao;
 
-import models.Department;
+import models.GeneralNews;
 
 import java.util.List;
 
 public interface GeneralNewsDao {
+    void add(GeneralNews generalNews);
 
-    void add (Department department);
+    List<GeneralNews> getAll();
 
-    List<Department> getAll();
-    Department findById(int id);
+    void deleteById(int id);
 
-    void update (String deptName, String description, int noOfEmployees);
-
-    void deleteById (int Id);
+    void clearAll();
 }
