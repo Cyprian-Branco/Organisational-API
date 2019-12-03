@@ -21,16 +21,16 @@ public class App {
         Sql2oDepartmentNewsDao departmentNewsDao;
         Sql2oGeneralNewsDao generalNewsDao;
         Sql2oUserDao userDao;
-        Connection conn;
+        Connection con;
         Gson gson = new Gson();
 
         String connectionString = "jdbc:postgresql://localhost:5432/organisational_api";
-        Sql2o sql2o = new Sql2o(connectionString, "QUANTUM_HACK", "Blackhole2123");
+        Sql2o sql2o = new Sql2o(connectionString, "quantum_hack", "Blackhole2123");
         userDao = new Sql2oUserDao(sql2o);
         departmentDao = new Sql2oDepartmentDao(sql2o);
         departmentNewsDao = new Sql2oDepartmentNewsDao(sql2o);
         generalNewsDao = new Sql2oGeneralNewsDao(sql2o);
-        conn = sql2o.open();
+        con = sql2o.open();
 
         post("/departments/new", "application/json", ((request, response) -> {
             Department department = gson.fromJson(request.body(), Department.class);
