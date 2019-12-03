@@ -36,6 +36,17 @@ After cloning to your local machine navigate to the folder you cloned into and o
 * Go to your browser and type ``` localhost:4567 ```
 In PSQL:
  *
+## HTTP Methods
+
+| Method | Path                  | Description               |
+| ---    | ---                   | ---                       |
+| `Get`  | /departments          | Fetches all departments   |
+| `Get`  | /users                | Fetches all users         |
+| `Get`  | /departments/:id      | Fetches departments by id |
+| `Get`  | /departments/:id/news | Fetches department news   |
+| `Get`  | /general/:id/news     | Fetches department news   |
+
+	
 ## Built With
 
 * [Java](https://www.java.com/) - The language used
