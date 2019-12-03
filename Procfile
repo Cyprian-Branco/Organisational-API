@@ -1,1 +1,1 @@
-web: ./build/install/wildlife-tracker/bin/wildlife-tracker
+web: ./build/install/Organisational-API/bin/Organisational-API
