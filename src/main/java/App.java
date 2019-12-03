@@ -32,14 +32,15 @@ public class App {
         Sql2oUserDao userDao;
         Connection con;
         Gson gson = new Gson();
+//
+//        String connectionString = "jdbc:postgresql://localhost:5432/organisational_api";
+//        Sql2o sql2o = new Sql2o(connectionString, "quantum_hack", "Blackhole2123");
 
-        String connectionString = "jdbc:postgresql://localhost:5432/organisational_api";
-        Sql2o sql2o = new Sql2o(connectionString, "quantum_hack", "Blackhole2123");
-        userDao = new Sql2oUserDao(sql2o);
-        departmentDao = new Sql2oDepartmentDao(sql2o);
-        departmentNewsDao = new Sql2oDepartmentNewsDao(sql2o);
-        generalNewsDao = new Sql2oGeneralNewsDao(sql2o);
-        con = sql2o.open();
+        userDao = new Sql2oUserDao(DB.sql2o);
+        departmentDao = new Sql2oDepartmentDao(DB.sql2o);
+        departmentNewsDao = new Sql2oDepartmentNewsDao(DB.sql2o);
+        generalNewsDao = new Sql2oGeneralNewsDao(DB.sql2o);
+//        con = sql2o.open();
 
         post("/departments/new", "application/json", ((request, response) -> {
             Department department = gson.fromJson(request.body(), Department.class);
