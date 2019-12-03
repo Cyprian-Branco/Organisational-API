@@ -42,10 +42,9 @@ In PSQL:
 | ---    | ---                   | ---                       |
 | `Get`  | /departments          | Fetches all departments   |
 | `Get`  | /users                | Fetches all users         |
-| `Get`  | /departments/:id      | Fetches departments by id |
+| `Get`  | /departmentsnews      | Fetches departments new   |
 | `Get`  | /departments/:id/news | Fetches department news   |
-| `Get`  | /general/:id/news     | Fetches department news   |
-
+| `Get`  | /generalnews          | Fetches department news   |
 	
 ## Built With
 
