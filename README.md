@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/Cyprian-Branco/Organisational-API.svg?style=svg)](https://circleci.com/gh/Cyprian-Branco/Organisational-API)
 # Organisational-API
 
 ## Author
